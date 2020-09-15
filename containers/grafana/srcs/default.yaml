@@ -1,0 +1,51 @@
+apiVersion: 1
+
+datasources:
+    -   name: InfluxDB
+        type: influxdb
+        orgId: 1
+        url: http://influxdb:8086
+        access: proxy
+        database: influxdb
+
+    -   name: WORDPRESS
+        type: influxdb
+        orgId: 1
+        url: http://influxdb:8086
+        access: proxy
+        database: wordpress
+
+    -   name: PHPMYADMIN
+        type: influxdb
+        orgId: 1
+        url: http://influxdb:8086
+        access: proxy
+        database: phpmyadmin
+
+    -   name: NGINX
+        type: influxdb
+        orgId: 1
+        url: http://influxdb:8086
+        access: proxy
+        database: nginx
+
+    -   name: MYSQL
+        type: influxdb
+        orgId: 1
+        url: http://influxdb:8086
+        access: proxy
+        database: mysql
+
+    -   name: GRAFANA
+        type: influxdb
+        orgId: 1
+        url: http://influxdb:8086
+        access: proxy
+        database: grafana
+
+    -   name: FTPS
+        type: influxdb
+        orgId: 1
+        url: http://influxdb:8086
+        access: proxy
+        database: ftps

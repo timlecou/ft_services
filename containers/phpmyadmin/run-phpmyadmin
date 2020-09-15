@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export TELEGRAF_CONFIG_PATH=/etc/telegraf.conf
+
+echo "Running server at /web/phpmyadmin/:"
+php -S 0.0.0.0:5000 -t /web/phpmyadmin & /usr/bin/telegraf
